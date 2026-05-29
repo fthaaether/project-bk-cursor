@@ -33,6 +33,10 @@ app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', storage: 'json' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+module.exports = app;
+
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}
