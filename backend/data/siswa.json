@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "user_id": 4,
+    "nis": "001",
+    "kelas": "XI RPL 1",
+    "jurusan": "Rekayasa Perangkat Lunak"
+  },
+  {
+    "id": 2,
+    "user_id": 5,
+    "nis": "002",
+    "kelas": "XI RPL 2",
+    "jurusan": "Rekayasa Perangkat Lunak"
+  }
+]

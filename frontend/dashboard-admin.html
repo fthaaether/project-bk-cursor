@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin — Sistem BK</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">🎓 Sistem <span>BK</span></div>
+    <div class="navbar-user" id="navbar-user"></div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <h2>Dashboard Admin</h2>
+      <p>Kelola data siswa dan guru BK</p>
+    </div>
+
+    <div id="alert"></div>
+
+    <div class="stats-grid">
+      <div class="stat-card"><h3 id="stat-siswa">0</h3><p>Total Siswa</p></div>
+      <div class="stat-card"><h3 id="stat-guru">0</h3><p>Total Guru BK</p></div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-role="siswa">Siswa</button>
+      <button class="tab-btn" data-role="guru_bk">Guru BK</button>
+      <button class="btn btn-primary" id="btn-tambah" style="margin-left:auto">+ Tambah User</button>
+    </div>
+
+    <div class="card">
+      <div class="table-responsive">
+        <table>
+          <thead id="users-thead">
+            <tr>
+              <th>Nama</th>
+              <th>Username</th>
+              <th id="th-id">NIS</th>
+              <th id="th-detail">Kelas / Jurusan</th>
+              <th>Terdaftar</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="users-table">
+            <tr><td colspan="6" class="empty-state">Memuat data...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal User -->
+  <div class="modal-overlay" id="modal-user">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Tambah User</h3>
+        <button class="modal-close" onclick="closeModal('modal-user')">&times;</button>
+      </div>
+      <form id="form-user">
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Role</label>
+            <select name="role" class="form-control" required>
+              <option value="siswa">Siswa</option>
+              <option value="guru_bk">Guru BK</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label>Username</label>
+              <input type="text" name="username" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Password <small>(kosongkan jika tidak diubah)</small></label>
+            <input type="password" name="password" class="form-control">
+          </div>
+          <div id="fields-siswa">
+            <div class="form-row">
+              <div class="form-group">
+                <label>NIS</label>
+                <input type="text" name="nis" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Kelas</label>
+                <input type="text" name="kelas" class="form-control" placeholder="XI RPL 1">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Jurusan</label>
+              <input type="text" name="jurusan" class="form-control" placeholder="Rekayasa Perangkat Lunak">
+            </div>
+          </div>
+          <div id="fields-guru" class="hidden">
+            <div class="form-group">
+              <label>NIP</label>
+              <input type="text" name="nip" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" onclick="closeModal('modal-user')">Batal</button>
+          <button type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>initAdminDashboard();</script>
+</body>
+</html>

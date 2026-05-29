@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Administrator",
+    "username": "admin",
+    "password": "$2a$10$vZMorlYIo9KBPjk0WeNJZ.yhMgvat14FwFgqpsZMzPLWojB5OHH8i",
+    "role": "admin",
+    "created_at": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Ibu Sari",
+    "username": "guru1",
+    "password": "$2a$10$LpjJPLRdGEib92uC4ruiXOfF6RH5PBc/i.wbED02feoEr1LefMAaC",
+    "role": "guru_bk",
+    "created_at": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Bpk Hendra",
+    "username": "guru2",
+    "password": "$2a$10$LpjJPLRdGEib92uC4ruiXOfF6RH5PBc/i.wbED02feoEr1LefMAaC",
+    "role": "guru_bk",
+    "created_at": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Ahmad",
+    "username": "siswa1",
+    "password": "$2a$10$.8rT707LDc53dkL4vFfkxerINnibE1poajA6fT7oVf/K0ul0m.yHW",
+    "role": "siswa",
+    "created_at": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Budi",
+    "username": "siswa2",
+    "password": "$2a$10$.8rT707LDc53dkL4vFfkxerINnibE1poajA6fT7oVf/K0ul0m.yHW",
+    "role": "siswa",
+    "created_at": "2026-01-01T00:00:00.000Z"
+  }
+]

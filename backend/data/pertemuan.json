@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "siswa_id": 1,
+    "guru_bk_id": 1,
+    "kategori_id": 1,
+    "jenis": "individu",
+    "status": "disetujui",
+    "tanggal": "2026-06-01",
+    "keperluan": "Konsultasi nilai matematika",
+    "created_at": "2026-01-15T08:00:00.000Z"
+  }
+]
